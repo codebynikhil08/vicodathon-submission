@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InterviewerIQ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>InterviewerIQ</h1>
+            <p>AI-Powered Interview Assistant</p>
+        </header>
+
+
+        <!-- Ask Question -->
+
+        <div class="card">
+
+            <label for="question">
+                Interview Question
+            </label>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="e.g. What is Python?"
+                >
+
+                <button onclick="askQuestion()">
+                    Ask AI
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI Answer -->
+
+        <div class="card response-card">
+
+            <h2>AI Response</h2>
+
+            <div id="loading" class="loading">
+                Thinking...
+            </div>
+
+            <div id="response">
+
+                <p class="placeholder">
+                    Your AI-generated answer will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Candidate Answer -->
+
+        <div class="card">
+
+            <label for="candidateAnswer">
+                Your Answer
+            </label>
+
+            <textarea
+                id="candidateAnswer"
+                placeholder="Write your interview answer here..."
+            ></textarea>
+
+            <button
+                class="evaluate-btn"
+                onclick="evaluateAnswer()"
+            >
+                Evaluate My Answer
+            </button>
+
+        </div>
+
+
+        <!-- Evaluation -->
+
+        <div class="card evaluation-card">
+
+            <h2>Interview Evaluation</h2>
+
+            <div id="evaluation">
+
+                <p class="placeholder">
+                    Your score and feedback will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <p>
+                InterviewerIQ • AI Interview Assistant
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
