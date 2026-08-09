@@ -18,7 +18,31 @@
             <p>AI-Powered Interview Assistant</p>
         </header>
 
+<!-- Interview Mode -->
 
+<div class="card">
+
+    <label for="interviewMode">
+        Choose Interview Type
+    </label>
+
+    <select id="interviewMode">
+
+        <option value="technical">
+            Technical Interview
+        </option>
+
+        <option value="hr">
+            HR Interview
+        </option>
+
+        <option value="behavioral">
+            Behavioral Interview
+        </option>
+
+    </select>
+
+</div>
         <!-- Ask Question -->
 
         <div class="card">
@@ -49,6 +73,9 @@
         <div class="card response-card">
 
             <h2>AI Response</h2>
+            <button onclick="stopSpeaking()" class="stop-voice-btn">
+    🔇 Stop Voice
+</button>
 
             <div id="loading" class="loading">
                 Thinking...
@@ -77,7 +104,13 @@
                 id="candidateAnswer"
                 placeholder="Write your interview answer here..."
             ></textarea>
-
+<button
+    type="button"
+    class="voice-btn"
+    onclick="startVoiceInput()"
+>
+    🎤 Start Speaking
+</button>
             <button
                 class="evaluate-btn"
                 onclick="evaluateAnswer()"

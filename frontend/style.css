@@ -221,3 +221,59 @@ footer {
         min-height: 150px;
     }
 }
+/* Interview Mode */
+
+#interviewMode {
+    width: 100%;
+    padding: 15px 18px;
+
+    background: #080f1d;
+    color: #ffffff;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#interviewMode:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+#interviewMode:hover {
+    border-color: #475569;
+}
+
+#interviewMode option {
+    background: #111c32;
+    color: #ffffff;
+}
+/* Voice Input */
+
+.voice-btn {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    background: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.voice-btn:hover {
+    background: #115e59;
+}
+
+.voice-btn.recording {
+    background: #dc2626;
+}
