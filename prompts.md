@@ -256,7 +256,7 @@ http://127.0.0.1:8000
 or:
 
 ```text
-http://localhost:8000
+https://interviweriq.onrender.com
 ```
 
 replace them with the live backend URL.

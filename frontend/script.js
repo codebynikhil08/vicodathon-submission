@@ -20,7 +20,7 @@ async function askQuestion() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/ask", {
+        const response = await fetch("https://interviweriq.onrender.com/ask", {
 
             method: "POST",
 
@@ -98,7 +98,7 @@ async function evaluateAnswer() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/evaluate", {
+        const response = await fetch("https://interviweriq.onrender.com/evaluate", {
 
             method: "POST",
 
